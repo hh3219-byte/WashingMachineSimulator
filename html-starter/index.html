@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Washing Machine Simulator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="card">
+    <h1>Washing Machine Simulator</h1>
+
+    <div class="display">
+      <p class="label">Current stage</p>
+      <p id="stage" aria-live="polite">Idle</p>
+      <p class="label">Time left in stage</p>
+      <p class="countdown"><span id="time-left">0</span> <span class="label">seconds</span></p>
+    </div>
+
+    <div class="controls">
+      <button id="start" type="button">Start</button>
+      <button id="pause" type="button" disabled>Pause</button>
+      <button id="resume" type="button" disabled>Resume</button>
+      <button id="cancel" type="button" disabled>Cancel</button>
+      <button id="reset" type="button" disabled>Reset</button>
+    </div>
+  </main>
+</body>
+</html>
