@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  margin: 0;
+  padding: 1rem;
+  place-items: center;
+  background: #edf2f8;
+  color: #182333;
+  font: 1rem/1.5 system-ui, sans-serif;
+}
+
+.card {
+  width: min(100%, 30rem);
+  padding: clamp(1rem, 5vw, 2rem);
+  border: 1px solid #d5deeb;
+  border-radius: 1rem;
+  background: #fff;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.4rem, 5vw, 1.75rem);
+}
+
+.display {
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  background: #152b44;
+  color: #f5faff;
+}
+
+.display p {
+  margin: 0;
+}
+
+.label {
+  color: #bdcfe2;
+  font-size: 0.875rem;
+}
+
+#stage {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.countdown {
+  font-size: 2rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+button {
+  padding: 0.65rem 1.1rem;
+  border: 0;
+  border-radius: 0.5rem;
+  background: #2455a4;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: #183d79;
+}
+
+button:disabled {
+  background: #e5ebf2;
+  color: #546479;
+  cursor: default;
+}
